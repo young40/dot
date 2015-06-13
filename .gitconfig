@@ -1,0 +1,10 @@
+[user]
+  name = Peter Young
+  email = young40@gmail.com
+
+[core]
+  ignorecase = false
+  editor = emacs
+
+[push]
+  default = matching
