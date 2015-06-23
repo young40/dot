@@ -7,7 +7,7 @@
   (setq-default
    ;; List of additional paths where to look for configuration layers.
    ;; Paths must have a trailing slash (ie. `~/.mycontribs/')
-   dotspacemacs-configuration-layer-path '()
+   dotspacemacs-configuration-layer-path '("~/dot/spacemacs-private")
    ;; List of configuration layers to load. If it is the symbol `all' instead
    ;; of a list then all discovered layers will be installed.
    dotspacemacs-configuration-layers
@@ -28,6 +28,8 @@
      org
      shell
      syntax-checking
+
+     lua-config
      )
    ;; List of additional packages that will be installed wihout being
    ;; wrapped in a layer. If you need some configuration for these
@@ -156,6 +158,8 @@ before layers configuration."
 layers configuration."
   (global-linum-mode)
   (setq linum-format "%3d ")
+
+  (global-company-mode t)
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
