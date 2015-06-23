@@ -5,6 +5,7 @@
 [core]
   ignorecase = false
   editor = emacs
+	excludesfile = /Users/young40/dot/.gitignore_global
 
 [push]
   default = matching
