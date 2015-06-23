@@ -160,6 +160,8 @@ layers configuration."
   (setq linum-format "%3d ")
 
   (global-company-mode t)
+
+  (setq lua-indent-level 4)
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
