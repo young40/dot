@@ -19,6 +19,8 @@
      ;; ----------------------------------------------------------------
      auto-completion
      better-defaults
+     (colors :variables
+             colors-enable-rainbow-identifiers t)
      emacs-lisp
      (git :variables
           git-gutter-use-fringe t)
