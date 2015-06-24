@@ -163,6 +163,7 @@ layers configuration."
 
   (global-company-mode t)
 
+  (setq default-tab-width 4)
   (setq-default tab-width 4)
   (setq-default indent-tabs-mode nil)
   (setq-default lua-indent-level 4)
