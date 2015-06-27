@@ -28,7 +28,8 @@
      lua
      markdown
      org
-     shell
+     (shell :variables
+            shell-default-term-shell "/bin/zsh")
      syntax-checking
 
      lua-config
