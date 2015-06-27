@@ -167,7 +167,6 @@ layers configuration."
   (setq default-tab-width 4)
   (setq-default tab-width 4)
   (setq-default indent-tabs-mode nil)
-  (setq-default lua-indent-level 4)
 )
 
 ;; Do not write anything past this comment. This is where Emacs will

@@ -9,6 +9,8 @@
     :config
     (push 'company-dabbrev company-backends-lua-mode)
     (push 'company-etags company-backends-lua-mode)
+    (progn
+      (setq lua-indent-level 4))
     ))
 
 
