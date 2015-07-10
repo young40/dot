@@ -21,6 +21,7 @@
      better-defaults
      (colors :variables
              colors-enable-rainbow-identifiers t)
+     dash
      emacs-lisp
      (git :variables
           git-gutter-use-fringe t)
