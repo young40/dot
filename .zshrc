@@ -97,3 +97,9 @@ alias gsfs="git submodule foreach git status"
 
 alias gdc="git difftool --cached"
 alias gdf="git difftool"
+
+# naval project help command
+NAVAL_MAC_RUNNABLE=/Work/naval-work/naval/runtime/mac/navyMac.app/Contents/MacOS/navyMac
+NAVAL_JAVA_DIR=/Work/naval-work/naval/frameworks/tool/warship
+alias v="$NAVAL_MAC_RUNNABLE -workdir /Work/naval-work/naval -console disable" #-debugger codeide 
+alias e="cd $NAVAL_JAVA_DIR && java -jar exportExcel.jar && date && cd -"
