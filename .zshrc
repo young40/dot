@@ -89,3 +89,11 @@ source $ZSH/oh-my-zsh.sh
 
 # Homebrew bin path
 export PATH=/opt/homebrew/bin:$PATH
+
+# git alias
+alias gsfl="git submodule foreach git pull"
+alias gsfp="git submodule foreach git push"
+alias gsfs="git submodule foreach git status"
+
+alias gdc="git difftool --cached"
+alias gdf="git difftool"
