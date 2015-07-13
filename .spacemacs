@@ -29,6 +29,7 @@
      lua
      markdown
      org
+     osx
      (shell :variables
             shell-default-term-shell "/bin/zsh")
      syntax-checking
