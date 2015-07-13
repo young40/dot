@@ -20,7 +20,8 @@
      auto-completion
      better-defaults
      (colors :variables
-             colors-enable-rainbow-identifiers t)
+             colors-enable-rainbow-identifiers t
+             colors-enable-nyan-cat-progress-bar t)
      dash
      emacs-lisp
      (git :variables
