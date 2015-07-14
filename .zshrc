@@ -87,6 +87,11 @@ source $ZSH/oh-my-zsh.sh
 ## My custom setting ##
 #######################
 
+# fix 4m issue in emacs shell
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+export TERM=xterm-256color
+
 # Homebrew bin path
 export PATH=/opt/homebrew/bin:$PATH
 
