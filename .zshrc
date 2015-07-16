@@ -108,3 +108,6 @@ NAVAL_MAC_RUNNABLE=/Work/naval-work/naval/runtime/mac/navyMac.app/Contents/MacOS
 NAVAL_JAVA_DIR=/Work/naval-work/naval/frameworks/tool/warship
 alias v="$NAVAL_MAC_RUNNABLE -workdir /Work/naval-work/naval -console disable" #-debugger codeide 
 alias e="cd $NAVAL_JAVA_DIR && java -jar exportExcel.jar && date && cd -"
+
+alias o="cd ~/org/ && git add . && git commit -m 'quick update' && git push && echo 'Org pushed' && cd -"
+alias ou="cd ~/org/ && git pull && echo 'Org updated' && cd -"
