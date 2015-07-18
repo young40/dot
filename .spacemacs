@@ -171,6 +171,15 @@ layers configuration."
   (setq default-tab-width 4)
   (setq-default tab-width 4)
   (setq-default indent-tabs-mode nil)
+
+  (add-to-list 'load-path "~/.emacs.d/elpa/org-page-20150709.144")
+  (add-to-list 'load-path "~/.emacs.d/elpa/mustache-20131117.1407")
+  (require 'org-page)
+  (require 'mustache)
+  (setq op/repository-directory "/Work/test")
+  (setq op/site-domain "http://your.personal.site.com/")
+  (message "ooooookkkkkk")
+
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
