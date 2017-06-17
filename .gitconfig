@@ -1,0 +1,19 @@
+[user]
+  name = Peter Young
+  email = young40@gmail.com
+
+[core]
+  ignorecase = false
+  editor = vim
+  excludesfile = ~/dot/.gitignore_global
+  quotepath = false
+
+[push]
+  default = simple
+
+[diff]
+  tool = vimdiff
+  external = ~/dot/icdiffgit.sh
+
+[credential]
+  helper = store
