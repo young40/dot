@@ -1,0 +1,9 @@
+[submodule ".vim/bundle/Vundle.vim"]
+	path = .vim/bundle/Vundle.vim
+	url = https://github.com/gmarik/Vundle.vim.git
+[submodule "Spacemacs"]
+	path = Spacemacs
+	url = git@github.com:young40/Spacemacs.git
+[submodule "MyGitIgnore"]
+	path = MyGitIgnore
+	url = git@github.com:young40/MyGitIgnore.git
