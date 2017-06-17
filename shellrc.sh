@@ -1,3 +1,8 @@
+source functions.sh
+
+# for Emacs
+alias eo='openFileInEmacs'
+
 # 使用brew版本curl
 export PATH="/usr/local/opt/curl/bin:$PATH"
 
