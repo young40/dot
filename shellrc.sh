@@ -3,6 +3,17 @@ source functions.sh
 # for Emacs
 alias eo='openFileInEmacs'
 
+# for Git
+alias gdi="git diff"
+alias gdk="git diff --cached"
+alias gdf="git difftool"
+alias gdc="git difftool --cached"
+
+alias gsfl="git submodule foreach git pull"
+alias gsfp="git submodule foreach --recursive git push"
+alias gsfs="git submodule foreach --recursive git status"
+alias gsfr="git submodule foreach --recursive"
+
 # 使用brew版本curl
 export PATH="/usr/local/opt/curl/bin:$PATH"
 
