@@ -1,4 +1,4 @@
-source functions.sh
+source ~/dot/functions.sh
 
 # for Emacs
 alias eo=openFileInEmacs
