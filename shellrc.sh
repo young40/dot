@@ -1,7 +1,9 @@
 source functions.sh
 
 # for Emacs
-alias eo='openFileInEmacs'
+alias eo=openFileInEmacs
+alias em=openFileInEmacsDaemon
+alias emk="emacsclient -e '(kill-emacs)'"
 
 # for Git
 alias gdi="git diff"
