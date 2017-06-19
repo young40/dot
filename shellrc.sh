@@ -17,7 +17,7 @@ alias gsfs="git submodule foreach --recursive git status"
 alias gsfr="git submodule foreach --recursive"
 
 # 使用brew版本curl
-export PATH="/usr/local/opt/curl/bin:$PATH"
+alias curl=/usr/local/opt/curl/bin/curl
 
 # for GFW
 alias fq="proxychains4 zsh"
