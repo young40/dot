@@ -23,6 +23,9 @@ alias curl=/usr/local/opt/curl/bin/curl
 alias fq="proxychains4 zsh"
 alias ip="echo ip.gs:; curl ip.gs; echo ipip.net:; curl myip.ipip.net"
 
+# for Org files
+alias o="cd ~/org/ && git add . && git commit -m 'quick update' && git push && echo 'Org pushed' && cd -"
+
 if [ -f shell-private-key.sh ]
 then
    source shell-private-key.sh
