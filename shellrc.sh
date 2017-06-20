@@ -29,6 +29,12 @@ alias o="cd ~/org/ && git add . && git commit -m 'quick update' && git push && e
 # for Lua
 alias lua="lua -e 'package.path = package.path .. \";/Users/$USER/dot/?.lua\" require(\"lua-dump\")'"
 
+# for Xianlai
+if [ -f ~/dot/shell-Xianlai.sh ]
+then
+    source ~/dot/shell-Xianlai.sh
+fi
+
 if [ -f ~/dot/shell-private-key.sh ]
 then
    source ~/dot/shell-private-key.sh
