@@ -1,6 +1,6 @@
 openSimulator()
 {
-    dir=~/Work/Sichuan/sichuan_debug/
+    dir=/Users/young40/Work/sichuan/mahjong/
     app="`echo $dir`runtime/mac/mahjonghn-desktop$1.app/Contents/MacOS/mahjonghn-desktop"
 
     rm -rf "${dir}src_et"
@@ -9,8 +9,8 @@ openSimulator()
 
 openSimulatorForUpdateDir()
 {
-    rm -rf ~/Work/Sichuan/for_sichuan_debug_update/src_et/
-    openSimulator $1 -workdir ~/Work/Sichuan/for_sichuan_debug_update/
+    rm -rf /Users/young40/Work/sichuan/for_sichuan_debug_update/src_et/
+    openSimulator $1 -workdir /Users/young40/Work/sichuan/for_sichuan_debug_update
 }
 
 alias  v="openSimulator 1"
