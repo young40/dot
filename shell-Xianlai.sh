@@ -23,3 +23,10 @@ alias  vf="openSimulatorForUpdateDir 1"
 alias vf2="openSimulatorForUpdateDir 2"
 alias vf3="openSimulatorForUpdateDir 3"
 alias vf4="openSimulatorForUpdateDir 4"
+
+xianlaigit()
+{
+    git config --local user.name "yangshiling"
+    git config --local user.email "yangshiling@xianlai-inc.com"
+    echo "git config updated in local dir"
+}
