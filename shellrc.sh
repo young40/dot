@@ -43,4 +43,5 @@ then
    source ~/dot/shell-private-key.sh
 fi
 
+# for autojump
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
