@@ -11,5 +11,7 @@ if [[ $1 == "+" ]]; then
     shift
 fi
 
-/usr/local/bin/emacsclient -q -n -a "" $1 $2 || open -a /Applications/Emacs.app/Contents/MacOS/Emacs &
+/usr/local/bin/emacsclient -q -n -a "" $1 $2 ||\
+open -a /Applications/Emacs.app/Contents/MacOS/Emacs $1 || \
+open -a /Applications/Emacs.app/Contents/MacOS/Emacs $2 &
 
