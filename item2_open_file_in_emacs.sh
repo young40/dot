@@ -38,6 +38,15 @@ openInFinder()
 openInFinder $1
 openInFinder $2
 
+if ! (/usr/local/bin/emacsclient --eval "t" 2> /dev/null > /dev/null)
+then
+    nohup /Applications/Emacs.app/Contents/MacOS/Emacs --chdir "${PWD}" $1 $2 &
+else
+    /usr/local/bin/emacsclient -n $1 $2
+fi
+
+exit 0
+
 /usr/local/bin/emacsclient -q -n -a "" $1 $2 ||\
 open -a /Applications/Emacs.app/Contents/MacOS/Emacs $1 || \
 open -a /Applications/Emacs.app/Contents/MacOS/Emacs $2 &
