@@ -4,7 +4,7 @@ openSimulator()
     app="`echo $dir`runtime/mac/mahjonghn-desktop$1.app/Contents/MacOS/mahjonghn-desktop"
 
     rm -rf "${dir}src_et"
-    $app -console disable -workdir $dir $2 $3
+    $app -console disable -writable-path "${dir}writefiles" -workdir $dir $2 $3
 }
 
 openSimulatorForUpdateDir()
