@@ -35,6 +35,9 @@ alias vim=nvim
 # for TexturePacker unpack
 alias up="python ~/dot/tool/unpacker.py"
 
+# quick search file
+alias s="find . | grep "
+
 # for thefuck
 eval "$(thefuck --alias)"
 
