@@ -21,7 +21,7 @@ alias curl=/usr/local/opt/curl/bin/curl
 
 # for GFW
 alias fq="proxychains4 zsh"
-alias ip="echo ip.gs:; curl ip.gs; echo ipip.net:; curl myip.ipip.net"
+alias ip="echo ip.sb:; curl ip.sb; echo ipip.net:; curl myip.ipip.net"
 
 # for Org files
 alias o="cd ~/org/ && git add . && git commit -m 'quick update' && git push && echo 'Org pushed'; cd -"
@@ -31,6 +31,9 @@ alias lua="lua -e 'package.path = package.path .. \";/Users/$USER/dot/?.lua\" re
 
 # for NeoVim
 alias vim=nvim
+
+# for TexturePacker unpack
+alias up="python ~/dot/tool/unpacker.py"
 
 # for thefuck
 eval "$(thefuck --alias)"
