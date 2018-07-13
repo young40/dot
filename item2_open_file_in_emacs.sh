@@ -19,6 +19,7 @@ openInFinder()
         "png"
         "jpg"
         "pdf"
+        "tps"
     )
 
     if [ "$ext" = "mp3" ]; then
