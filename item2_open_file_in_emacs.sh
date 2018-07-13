@@ -21,6 +21,11 @@ openInFinder()
         "pdf"
     )
 
+    if [ "$ext" = "mp3" ]; then
+        afplay $1
+        exit
+    fi
+
     for ex in ${extArray[@]}
     do
         if [ "$ext" = "$ex" ]; then
