@@ -39,6 +39,7 @@ alias up="python ~/dot/tool/unpacker.py"
 alias s="find . | grep "
 
 # color cat
+alias catt="/bin/cat"
 alias cat="pygmentize -g"
 
 # for thefuck
