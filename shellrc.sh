@@ -21,6 +21,7 @@ alias curl=/usr/local/opt/curl/bin/curl
 
 # for GFW
 alias fq="proxychains4 zsh"
+alias fq2="export http_proxy=http://127.0.0.1:1087;export https_proxy=http://127.0.0.1:1087;"
 alias ip="echo ip.sb:; curl ip.sb; echo ipip.net:; curl myip.ipip.net"
 
 # for Org files
