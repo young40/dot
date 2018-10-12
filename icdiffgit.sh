@@ -1,2 +1,2 @@
 #!/bin/bash
-icdiff $2 $5
+icdiff "$2" "$5"
