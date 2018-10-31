@@ -1,10 +1,11 @@
 openSimulator()
 {
-    dir=/Users/young40/Work/sichuan/mahjong/
-    app="`echo $dir`runtime/mac/mahjonghn-desktop$1.app/Contents/MacOS/mahjonghn-desktop"
+    # dir=/Users/young40/Work/sichuan/mahjong/
+    dir=/Users/young40/Work/jingji/ddz/devproject/
+    app="${dir}ZZGameruntime/mac/mahjonghn-desktop$1.app/Contents/MacOS/mahjonghn-desktop"
 
     rm -rf "${dir}src_et"
-    $app -console disable -writable-path "${dir}writefiles" -workdir $dir $2 $3
+    $app -console disable -writable-path "${dir}ZZGamewritefiles" -workdir $dir $2 $3
 }
 
 openSimulatorForUpdateDir()
