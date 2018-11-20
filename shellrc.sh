@@ -30,6 +30,9 @@ alias o="cd ~/org/ && git add . && git commit -m 'quick update' && git push && e
 # for Lua
 alias lua="lua -e 'package.path = package.path .. \";/Users/$USER/dot/?.lua\" require(\"lua-dump\")'"
 
+# for React Native
+alias rn=react-native
+
 # for NeoVim
 alias vim=nvim
 
