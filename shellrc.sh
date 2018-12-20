@@ -16,6 +16,9 @@ alias gsfp="git submodule foreach --recursive git push"
 alias gsfs="git submodule foreach --recursive git status"
 alias gsfr="git submodule foreach --recursive"
 
+# for Git ignore
+function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
+
 # 使用brew版本curl
 alias curl=/usr/local/opt/curl/bin/curl
 
