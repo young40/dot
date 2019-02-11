@@ -3,13 +3,13 @@ brew install hexyl
 brew install nmap
 brew install dex2jar
 brew install git-lfs
+brew install telnet
 
 # brew install go
 # brew install tgz
 # brew install hugo
 # brew install neovim
 # brew install imagemagick
-# brew install telnet
 # brew install ftp
 # brew install ipa
 # brew install apksigner
