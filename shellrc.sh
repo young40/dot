@@ -24,8 +24,22 @@ alias curl=/usr/local/opt/curl/bin/curl
 
 # for GFW
 alias fq="proxychains4 zsh"
-alias fq2="export http_proxy=http://127.0.0.1:1087;export https_proxy=http://127.0.0.1:1087;"
-alias ip="echo ipip.net:; curl myip.ipip.net; echo ip.sb:; curl -s https://api.ip.sb/geoip | jq '[.ip, .city, .region, .organization]';"
+alias fq2="export http_proxy=http://127.0.0.1:1086;export https_proxy=http://127.0.0.1:1086;"
+# alias ip="echo ipip.net:; curl myip.ipip.net; echo ip.sb:; curl -s https://api.ip.sb/geoip | jq '[.ip, .city, .region, .organization]';"
+
+ip()
+{
+    TIME1=$SECONDS
+    echo ipip.net:
+    curl myip.ipip.net
+    TIME2=$SECONDS
+    echo 耗时: $((TIME2-TIME1)) 秒
+
+    echo ip.sb:
+    curl -s https://api.ip.sb/geoip | jq '[.ip, .city, .region, .organization]'
+    TIME3=$SECONDS
+    echo 耗时: $((TIME3-TIME2)) 秒
+}
 
 # for Org files
 alias o="cd ~/org/ && git add . && git commit -m 'quick update' && git push && echo 'Org pushed'; cd -"
