@@ -5,6 +5,9 @@ brew install dex2jar
 brew install git-lfs
 brew install telnet
 
+brew tap isacikgoz/gitin
+brew install gitin
+
 # brew install go
 # brew install tgz
 # brew install hugo
