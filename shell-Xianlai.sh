@@ -1,8 +1,9 @@
 openSimulator()
 {
     # dir=/Users/young40/Work/sichuan/mahjong/
-    dir=/Users/young40/Work/jingji/ddz/devproject/
-    app="${dir}ZZGameruntime/mac/mahjonghn-desktop$1.app/Contents/MacOS/mahjonghn-desktop"
+    appDir="/Users/young40/Work/Simulator/"
+    dir=/Users/young40/Work/QuDZZ/ddzlua/simulator/
+    app="${appDir}/mac/mahjonghn-desktop$1.app/Contents/MacOS/mahjonghn-desktop"
 
     rm -rf "${dir}src_et"
     $app -console disable -writable-path "${dir}ZZGamewritefiles" -workdir $dir $2 $3
