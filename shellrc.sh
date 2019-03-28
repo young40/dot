@@ -63,6 +63,9 @@ alias s="find . | grep "
 alias catt="/bin/cat"
 alias cat="pygmentize -g"
 
+#fzf
+alias f=fzf
+
 # for thefuck
 eval "$(thefuck --alias)"
 
