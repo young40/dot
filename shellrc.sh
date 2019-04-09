@@ -46,6 +46,15 @@ alias o="cd ~/Work/Org/ && git add . && git commit -m 'quick update' && git push
 
 # for Lua
 alias lua="lua -e 'package.path = package.path .. \";/Users/$USER/dot/?.lua\" require(\"lua-dump\")'"
+luaf()
+{
+    fullPath="$(pwd)/$1"
+    cd /Users/young40/Work/lua/FormatLua
+    tmpFile=/tmp/tmp-formatter.lua
+    lua5.1 formatter.lua --file $fullPath > $tmpFile
+    mv $tmpFile $fullPath
+    cd -
+}
 
 # for React Native
 alias rn=react-native
