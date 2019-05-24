@@ -2,7 +2,7 @@ openSimulator()
 {
     # dir=/Users/young40/Work/sichuan/mahjong/
     appDir="/Users/young40/Work/Simulator/"
-    dir=/Users/young40/Work/QuDZZ/ddzlua/simulator/
+    dir=/Users/young40/Work/QuDZZ/ddzlua/devproject/
     app="${appDir}/mac/mahjonghn-desktop$1.app/Contents/MacOS/mahjonghn-desktop"
 
     rm -rf "${dir}src_et"
@@ -40,3 +40,5 @@ xianlaigit()
     git config --local user.email "yangshiling@xianlai-inc.com"
     echo "git config updated in local dir"
 }
+
+alias p="cat /Users/young40/Work/闲徕文档/2019-03-23-测试环境手机号/趣斗地主测试环境账号.txt"
