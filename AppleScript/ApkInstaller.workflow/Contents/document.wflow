@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>444.39</string>
+	<string>444.42</string>
 	<key>AMApplicationVersion</key>
 	<string>2.9</string>
 	<key>AMDocumentVersion</key>
@@ -51,7 +51,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>source</key>
-					<string>on run {input, parameters}	set devices to do shell script "/usr/local/bin/adb devices"	set devices_count to count paragraph of devices	if devices_count &lt; 3 then		display dialog "未发现设备" buttons {"OK"} default button "OK"		return	end if		if devices_count &gt; 3 then		display dialog "发现多个设备" buttons {"OK"} default button "OK"		return	end if		set thisPOSIXPath to (the POSIX path of input)		set sh_result to do shell script "/usr/local/bin/adb install -r " &amp; thisPOSIXPath		if (last paragraph of sh_result) = "Success" then	else		display dialog (last paragraph of sh_result) buttons {"OK"} default button "OK"	end if		return inputend run</string>
+					<string>on run {input, parameters}	set devices to do shell script "/usr/local/bin/adb devices"	set devices_count to count paragraph of devices	if devices_count &lt; 3 then		display dialog "未发现设备" buttons {"OK"} default button "OK"		return	end if		if devices_count &gt; 3 then		display dialog "发现多个设备" buttons {"OK"} default button "OK"		return	end if		set thisPOSIXPath to quoted form of (the POSIX path of input)		set sh_result to do shell script "/usr/local/bin/adb install -r " &amp; thisPOSIXPath		if (last paragraph of sh_result) = "Success" then	else		display dialog (last paragraph of sh_result) buttons {"OK"} default button "OK"	end if		return inputend run</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.RunScript</string>
@@ -105,7 +105,7 @@ end run</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>567.500000:769.000000</string>
+				<string>567.500000:666.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
