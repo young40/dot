@@ -43,6 +43,7 @@ ip()
 
 # for Org files
 alias o="cd ~/Work/Org/ && git add . && git commit -m 'quick update' && git push && echo 'Org pushed'; cd -"
+alias oi="cd ~/Work/Org/ && git diff && cd -"
 
 # for Lua
 alias lua="lua -e 'package.path = package.path .. \";/Users/$USER/dot/?.lua\" require(\"lua-dump\")'"
