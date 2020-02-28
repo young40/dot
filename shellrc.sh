@@ -63,10 +63,6 @@ alias up="python ~/dot/tool/unpacker.py"
 # quick search file
 alias s="find . | grep "
 
-# color cat
-alias catt="/bin/cat"
-alias cat="pygmentize -g"
-
 #fzf
 alias f=fzf
 
