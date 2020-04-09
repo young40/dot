@@ -66,6 +66,9 @@ alias s="find . | grep "
 #fzf
 alias f=fzf
 
+# for homebrew
+export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles/
+
 # for thefuck
 eval "$(thefuck --alias)"
 
