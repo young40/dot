@@ -62,6 +62,7 @@ alias up="python ~/dot/tool/unpacker.py"
 
 # quick search file
 alias s="find . | grep "
+alias si="find . | grep -i "
 
 #fzf
 alias f=fzf
