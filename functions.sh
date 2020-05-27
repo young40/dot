@@ -1,7 +1,7 @@
 # 使用Emacs打开文件 
 openFileInEmacs()
 {
-    if [ -f $1 ]
+    if [[ -d $1 || -f $1 ]]
     then
         open -a /Applications/Emacs.app "$1"
     else
