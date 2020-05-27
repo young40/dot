@@ -61,8 +61,8 @@ alias vim=nvim
 alias up="python ~/dot/tool/unpacker.py"
 
 # quick search file
-alias s="find . | grep "
-alias si="find . | grep -i "
+alias s="find . | grep -i "
+alias sc="find . | grep "
 
 #fzf
 alias f=fzf
