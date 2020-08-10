@@ -73,6 +73,9 @@ export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles/
 # for thefuck
 eval "$(thefuck --alias)"
 
+# for Unity
+alias uig="cp ~/dot/Resource/UnityIgnore ./.gitignore"
+
 # for Xianlai
 if [ -f ~/dot/shell-Xianlai.sh ]
 then
@@ -89,3 +92,4 @@ fi
 
 # for homebrew
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
+export PATH="/usr/local/sbin:$PATH"
