@@ -93,3 +93,6 @@ fi
 # for homebrew
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
 export PATH="/usr/local/sbin:$PATH"
+
+MY_NAME=`whoami`
+export PATH="$PATH:/Users/${MY_NAME}/Library/Android/sdk/platform-tools"
