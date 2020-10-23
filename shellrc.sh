@@ -75,6 +75,7 @@ eval "$(thefuck --alias)"
 
 # for Unity
 alias uig="cp ~/dot/Resource/UnityIgnore ./.gitignore"
+alias uap="sh ~/dot/tool/UnityAddMissingPackage.sh"
 
 # for Xianlai
 if [ -f ~/dot/shell-Xianlai.sh ]
