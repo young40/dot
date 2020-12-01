@@ -25,6 +25,7 @@ alias curl=/usr/local/opt/curl/bin/curl
 # for GFW
 alias fq="proxychains4 zsh"
 alias fq2="export http_proxy=http://127.0.0.1:1087;export https_proxy=http://127.0.0.1:1087;"
+alias fq3="export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890"
 # alias ip="echo ipip.net:; curl myip.ipip.net; echo ip.sb:; curl -s https://api.ip.sb/geoip | jq '[.ip, .city, .region, .organization]';"
 
 ip()
