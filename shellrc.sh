@@ -68,6 +68,12 @@ alias sc="find . | grep "
 #fzf
 alias f=fzf
 
+# for JSON
+js()
+{
+    cat $1 | jq
+}
+
 # for homebrew
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles/
 
