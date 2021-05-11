@@ -24,7 +24,7 @@ alias y="openSimulatorForCurrent 1"
 
 xianlaigit()
 {
-    git config --local user.name "yangshiling"
+    git config --local user.name "Yangshiling(杨世玲)"
     git config --local user.email "yangshiling@xianlai-inc.com"
     echo "git config updated in local dir"
 }
