@@ -79,7 +79,10 @@ js()
 # export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
 
 # for thefuck
-eval "$(thefuck --alias)"
+if [ -f /usr/local/bin/thefuck ]
+then
+    eval "$(thefuck --alias)"
+fi
 
 # for Unity
 alias uig="cp ~/dot/Resource/UnityIgnore ./.gitignore"
