@@ -56,7 +56,10 @@ alias lc="luacheck"
 alias rn=react-native
 
 # for NeoVim
-alias vim=nvim
+if [ -f /usr/local/bin/nvim ]
+then
+    alias vim=nvim
+fi
 
 # for TexturePacker unpack
 alias up="python ~/dot/tool/unpacker.py"
