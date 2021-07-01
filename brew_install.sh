@@ -4,3 +4,4 @@ brew install neovim
 brew install thefuck
 brew install eddieantonio/eddieantonio/imgcat
 brew install git-lfs
+brew install cloc
