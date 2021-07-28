@@ -6,3 +6,4 @@ brew install eddieantonio/eddieantonio/imgcat
 brew install git-lfs
 brew install cloc
 brew install bat
+brew install the_silver_searcher
