@@ -28,3 +28,14 @@ openFileInEmacsDaemon()
     fi
     emacsclient -c "$@"
 }
+
+ffmpegKillAC3DTS()
+{
+    if [[ -f $1 ]]
+    then
+        FILENAME=$1
+        ffmpeg -i $1  -ac 6 -b:a 400k -vcodec copy "${FILENAME%.*}"_aac."${FILENAME##*.}"
+    else
+        echo "Not A File."
+    fi
+}
