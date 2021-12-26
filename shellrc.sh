@@ -43,9 +43,12 @@ ip()
 }
 
 # for Org files
-alias o="cd ~/Work/Org/ && git add . && git commit -m 'quick update' && git push && echo 'Org pushed'; cd -"
-alias oi="cd ~/Work/Org/ && git diff && cd -"
-alias ob="cd ~/Work/Young40Blog && git pull && git add . && git commit -m 'quick update' && git push && echo 'Blog content stored.'; cd -"
+ORGWDIR=" -C ~/Work/Org "
+alias o="git $ORGWDIR add . && git $ORGWDIR commit -m 'quick update' && git $ORGWDIR push && echo 'Org pushed'"
+alias oi="git $ORGWDIR diff"
+# for Hugo Org Blog
+OBWDIR=" -C ~/Work/Young40Blog "
+alias ob="git $OBWDIR pull && git $OBWDIR add . && git $OBWDIR commit -m 'quick update' && git $OBWDIR push && echo 'Blog content stored.'"
 
 # for Lua
 alias lua="lua -e 'package.path = package.path .. \";/Users/$USER/dot/?.lua\" require(\"lua-dump\")'"
