@@ -48,7 +48,9 @@ alias o="git $ORGWDIR add . && git $ORGWDIR commit -m 'quick update' && git $ORG
 alias oi="git $ORGWDIR diff"
 # for Hugo Org Blog
 OBWDIR=" -C ~/Work/Young40Blog "
+OBDWDIR=" -C ~/Work/Young40Blog/public "
 alias ob="git $OBWDIR pull && git $OBWDIR add . && git $OBWDIR commit -m 'quick update' && git $OBWDIR push && echo 'Blog content stored.'"
+alias obd="git $OBDWDIR pull && echo 'Updated.' && cd ~/Work/Young40Blog && dotnet ~/Work/Young40Blog/tools/ConsoleApp2.dll && hugo && cd - && git $OBDWDIR add . && git $OBDWDIR commit -m 'Quick Deploy' && git $OBDWDIR push && echo 'Quick Deploy Done.' "
 
 # for Lua
 alias lua="lua -e 'package.path = package.path .. \";/Users/$USER/dot/?.lua\" require(\"lua-dump\")'"
