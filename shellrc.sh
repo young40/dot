@@ -25,7 +25,6 @@ then
 alias curl=/usr/local/opt/curl/bin/curl
 fi
 
-
 # for GFW
 alias fq="proxychains4 zsh"
 alias fq2="export http_proxy=http://127.0.0.1:1087;export https_proxy=http://127.0.0.1:1087;"
@@ -114,6 +113,7 @@ fi
 
 # for autojump
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+[ -f /usr/share/autojump/autojump.sh ] && . /usr/share/autojump/autojump.sh
 
 export PATH="/usr/local/sbin:$PATH"
 
