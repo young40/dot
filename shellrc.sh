@@ -20,7 +20,11 @@ alias gsfr="git submodule foreach --recursive"
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
 
 # 使用brew版本curl
+if [ -f /usr/local/opt/curl/bin/curl ]
+then
 alias curl=/usr/local/opt/curl/bin/curl
+fi
+
 
 # for GFW
 alias fq="proxychains4 zsh"
