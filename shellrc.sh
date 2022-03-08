@@ -68,6 +68,7 @@ alias rn=react-native
 if [ -f /usr/local/bin/nvim ]
 then
     alias vim=nvim
+    alias vim=nvim -d -o
 fi
 
 # for TexturePacker unpack
