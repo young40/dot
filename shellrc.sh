@@ -1,4 +1,5 @@
 source ~/dot/functions.sh
+source ~/dot/tool/item2-tab-color.sh
 
 # for Emacs
 alias eo=openFileInEmacs
