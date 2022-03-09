@@ -46,9 +46,13 @@ ip()
 }
 
 # for Org files
-ORGWDIR=" -C ~/Work/Org "
-alias o="git $ORGWDIR add . && git $ORGWDIR commit -m 'quick update' && git $ORGWDIR push && echo 'Org pushed'"
-alias oi="git $ORGWDIR diff"
+if [ -d ~/Work/Org ]
+then
+    ORGWDIR=" -C ~/Work/Org "
+    alias o="git $ORGWDIR add . ; git $ORGWDIR commit -m 'quick update' ; git $ORGWDIR push && echo 'Org pushed'"
+    alias oi="git $ORGWDIR diff"
+fi
+
 # for Hugo Org Blog
 OBWDIR=" -C ~/Work/Young40Blog "
 OBDWDIR=" -C ~/Work/Young40Blog/public "
