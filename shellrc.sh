@@ -122,6 +122,10 @@ fi
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 [ -f /usr/share/autojump/autojump.sh ] && . /usr/share/autojump/autojump.sh
 
+# for .DS_Store
+alias dsstoreshow="find . -name .DS_Store"
+alias dsstorermall="find . -name .DS_Store -delete"
+
 export PATH="/usr/local/sbin:$PATH"
 
 MY_NAME=`whoami`
