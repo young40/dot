@@ -126,8 +126,5 @@ fi
 alias dsstoreshow="find . -name .DS_Store"
 alias dsstorermall="find . -name .DS_Store -delete"
 
-export PATH="/usr/local/sbin:$PATH"
-
-MY_NAME=`whoami`
-export PATH="$PATH:/Users/${MY_NAME}/Library/Android/sdk/platform-tools"
-export PATH="/usr/local/opt/binutils/bin:$PATH"
+# for $PATH
+alias showPATH="tr ':' '\n' <<< \"$PATH\""

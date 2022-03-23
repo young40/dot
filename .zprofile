@@ -1,6 +1,7 @@
-# for Cocos
-if [ -f /Applications/Cocos/Cocos2d-x/cocos2d-x-3.10/tools/cocos2d-console/bin/cocos ]; then
-    export PATH=$PATH:/Applications/Cocos/Cocos2d-x/cocos2d-x-3.10/tools/cocos2d-console/bin/
-fi
+export PATH="$PATH:/usr/local/opt/binutils/bin"
+# export PATH="$PATH:/usr/local/sbin"
+export PATH="$PATH:$HOME/Library/Android/sdk/platform-tools"
+export PATH="$PATH:$HOME/.rvm/bin"
 
 export LANG="en_US.UTF-8"
+export LC_ALL="en_US.UTF-8"
