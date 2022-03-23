@@ -113,12 +113,6 @@ fi
 alias uig="cp ~/dot/Resource/UnityIgnore ./.gitignore"
 alias uap="sh ~/dot/tool/UnityAddMissingPackage.sh"
 
-# for Xianlai
-if [ -f ~/dot/shell-Xianlai.sh ]
-then
-    source ~/dot/shell-Xianlai.sh
-fi
-
 if [ -f ~/dot/shell-private-key.sh ]
 then
    source ~/dot/shell-private-key.sh
@@ -132,3 +126,4 @@ export PATH="/usr/local/sbin:$PATH"
 
 MY_NAME=`whoami`
 export PATH="$PATH:/Users/${MY_NAME}/Library/Android/sdk/platform-tools"
+export PATH="/usr/local/opt/binutils/bin:$PATH"
