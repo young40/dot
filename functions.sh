@@ -39,3 +39,14 @@ ffmpegKillAC3DTS()
         echo "Not A File."
     fi
 }
+
+ffmpegKillAC3DTSNoSubtitle()
+{
+    if [[ -f $1 ]]
+    then
+        FILENAME=$1
+        ffmpeg -i $1  -ac 6 -b:a 400k -vcodec copy -map 0:v -map 0:a "${FILENAME%.*}"_aac."${FILENAME##*.}"
+    else
+        echo "Not A File."
+    fi
+}
