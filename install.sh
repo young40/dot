@@ -4,3 +4,5 @@ echo "source ~/dot/shellrc.sh" >> ~/.zshrc
 
 # 配置git
 ln -s ~/dot/.gitconfig ~/.gitconfig
+
+ln -s ~/dot/tigrc ~/.tigrc
