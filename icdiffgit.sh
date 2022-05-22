@@ -1,2 +1,2 @@
 #!/bin/bash
-icdiff "$2" "$5"
+icdiff --color-map='description:cyan,separator:cyan' "$2" "$5"
