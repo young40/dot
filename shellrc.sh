@@ -67,6 +67,7 @@ OBDWDIR=" -C ~/Work/Young40Blog/public "
 alias obc="dotnet ~/Work/Young40Blog/tools/ConsoleApp2.dll"
 alias ob="git $OBWDIR pull && obc && git $OBWDIR add . && git $OBWDIR commit -m 'quick update' && git $OBWDIR push && echo 'Blog content stored.'"
 alias obd="git $OBDWDIR pull && echo 'Updated.' && cd ~/Work/Young40Blog && dotnet ~/Work/Young40Blog/tools/ConsoleApp2.dll && hugo && cd - && git $OBDWDIR add . && git $OBDWDIR commit -m 'Quick Deploy' && git $OBDWDIR push && echo 'Quick Deploy Done.' "
+alias obi="git $OBWDIR diff org"
 
 # for Lua
 alias lua="lua -e 'package.path = package.path .. \";/Users/$USER/dot/?.lua\" require(\"lua-dump\")'"
