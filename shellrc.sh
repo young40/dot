@@ -137,3 +137,7 @@ alias dsstorermall="find . -name .DS_Store -delete"
 
 # for $PATH
 alias showPATH="tr ':' '\n' <<< \"$PATH\""
+
+if uname -a | grep -qi '^Linux.*microsoft'; then
+  alias open="explorer.exe"
+fi
