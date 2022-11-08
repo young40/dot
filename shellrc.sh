@@ -89,8 +89,8 @@ fi
 alias up="python ~/dot/tool/unpacker.py"
 
 # quick search file
-alias s="find . | grep -i "
-alias sc="find . | grep "
+alias s="find . -not -path \"./.git/*\" | grep -i "
+alias sc="find . -not -path \"./.git/*\" | grep "
 
 #fzf
 alias f=fzf
