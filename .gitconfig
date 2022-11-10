@@ -1,11 +1,11 @@
 [user]
-	name = Bourne Young
-	email = young40@gmail.com
+  name = Bourne Young
+  email = young40@gmail.com
 
 [core]
   ignorecase = false
   editor = vim
-	excludesfile = /Users/young40/dot/.gitignore_global
+  excludesfile = /Users/young40/dot/.gitignore_global
   quotepath = false
 
 [push]
@@ -17,19 +17,15 @@
 
 [credential]
   helper = store
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
 [commit]
-	template = /Users/young40/.stCommitMsg
+  template = /Users/young40/.stCommitMsg
 [filter "lfs"]
-	process = git-lfs filter-process
-	required = true
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
 
 [alias]
-    mr = !sh -c 'git fetch origin merge-requests/$1/head:mr-$1 && git checkout mr-$1' -
+  mr = !sh -c 'git fetch origin merge-requests/$1/head:mr-$1 && git checkout mr-$1' -
+[icdiff]
+	options = --color-map=\"description:cyan,separator:cyan\"

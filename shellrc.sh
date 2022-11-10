@@ -7,10 +7,10 @@ alias em=openFileInEmacsDaemon
 alias emk="emacsclient -e '(kill-emacs)'"
 
 # for Git
-alias gdi="git diff"
-alias gdk="git diff --cached"
-alias gdf="git difftool"
-alias gdc="git difftool --cached"
+alias gdi="git difftool --extcmd icdiff"
+alias gdk="git difftool --cached --extcmd icdiff"
+alias gdf="git icdiff"
+alias gdc="git icdiff --cached"
 
 alias gsfl="git submodule foreach git pull"
 alias gsfp="git submodule foreach --recursive git push"
