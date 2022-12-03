@@ -142,3 +142,5 @@ alias showPATH="tr ':' '\n' <<< \"$PATH\""
 if uname -a | grep -qi '^Linux.*microsoft'; then
   alias open="explorer.exe"
 fi
+
+alias http="python3 -m http.server"
