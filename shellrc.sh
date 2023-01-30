@@ -48,7 +48,7 @@ ip()
     echo 耗时: $((TIME2-TIME1)) 秒
 
     echo ip.sb:
-    curl -s https://api.ip.sb/geoip | jq '[.ip, .city, .region, .organization]'
+    curl -s https://api.ip.sb/geoip -A Mozilla | jq '[.ip, .city, .region, .organization]'
     TIME3=$SECONDS
     echo 耗时: $((TIME3-TIME2)) 秒
 }
