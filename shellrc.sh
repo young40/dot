@@ -132,6 +132,9 @@ fi
 # for cat
 alias c='pygmentize -O style=monokai -f console256 -g'
 
+# for Chrome
+alias chrome='google-chrome'
+
 # for .DS_Store
 alias dsstoreshow="find . -name .DS_Store"
 alias dsstorermall="find . -name .DS_Store -delete"
