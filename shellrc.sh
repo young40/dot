@@ -135,6 +135,9 @@ alias c='pygmentize -O style=monokai -f console256 -g'
 # for Chrome
 alias chrome='google-chrome'
 
+# for Edge
+alias edge='microsoft-edge'
+
 # for .DS_Store
 alias dsstoreshow="find . -name .DS_Store"
 alias dsstorermall="find . -name .DS_Store -delete"
