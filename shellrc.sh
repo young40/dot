@@ -111,8 +111,11 @@ fuck()
     if [ -f /usr/local/bin/thefuck ]
     then
         eval "$(thefuck --alias)"
+        fuck
+    else
+        echo "the fuck NOT found in /usr/local/bin/thefuck"
+        return -1
     fi
-    fuck
 }
 
 # for Unity
