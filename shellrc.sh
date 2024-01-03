@@ -153,3 +153,5 @@ if uname -a | grep -qi '^Linux.*microsoft'; then
 fi
 
 alias http="python3 -m http.server"
+
+alias u="uname -a"
