@@ -39,6 +39,13 @@ fq()
 }
 alias fq2="proxychains4 zsh"
 
+unfq()
+{
+  unset https_proxy
+  unset http_proxy
+  unset all_proxy
+}
+
 ip()
 {
     TIME1=$SECONDS
