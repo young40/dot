@@ -161,4 +161,12 @@ fi
 
 alias http="python3 -m http.server"
 
-alias u="uname -a"
+u()
+{
+    if [ -f ~/UbuntuVersion ]
+    then
+        cat ~/UbuntuVersion
+    fi
+
+    uname -a
+}
