@@ -66,7 +66,7 @@ it2-b16-theme() {
 
 # Restore session tab color
 if [ -n "$IT2_SESSION_COLOR" ]; then
-    it2-tab-color $IT2_SESSION_COLOR
+    it2-tab-color $=IT2_SESSION_COLOR
 fi
 
 # Example palette: https://coolors.co/ff6d77-34d1bf-1f01b9-71a9f7-fcbf49
