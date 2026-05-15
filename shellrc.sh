@@ -170,3 +170,5 @@ u()
 
     uname -a
 }
+
+alias 1="claude --permission-mode bypassPermissions -p '1'"
