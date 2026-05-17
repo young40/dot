@@ -5,3 +5,5 @@ ZZGameruntime
 ZZGamewritefiles
 
 *~undo-tree~
+
+__pycache__
