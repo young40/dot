@@ -30,12 +30,17 @@ fi
 fq()
 {
     local ip="127.0.0.1"
+    local port="7890"
     if [ -n "$1" ]
     then
         ip=$1
     fi
+    if [ -n "$2" ]
+    then
+        port=$2
+    fi
 
-    export https_proxy=http://$ip:7890 http_proxy=http://$ip:7890 all_proxy=socks5://$ip:7890
+    export https_proxy=http://$ip:$port http_proxy=http://$ip:$port all_proxy=socks5://$ip:$port
 }
 alias fq2="proxychains4 zsh"
 
